@@ -1,7 +1,7 @@
 {
-	"compilerOptions": {
-		"module": "commonjs",
-		"esModuleInterop": true
-	},
-	"exclude": ["node_modules"]
+    "compilerOptions": {
+        "module": "ESNext",
+        "esModuleInterop": true
+    },
+    "exclude": ["node_modules"]
 }
