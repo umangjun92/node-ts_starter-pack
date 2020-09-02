@@ -1,14 +1,9 @@
 {
-    "name": "create-node-ts-app",
+    "name": "your-node-app-name",
     "version": "1.0.0",
     "main": "src/index.ts",
-    "license": "MIT",
-    "description": "CLI to bootstrap new typescript based node apps.",
-    "dependencies": {
-        "chalk": "^4.1.0",
-        "esm": "^3.2.25",
-        "ncp": "^2.0.0"
-    },
+    "description": "Describe your app here.",
+    "dependencies": {},
     "devDependencies": {
         "@types/node": "^14.6.2",
         "nodemon": "^2.0.4",
@@ -17,12 +12,11 @@
         "ts-node": "^9.0.0",
         "typescript": "^4.0.2"
     },
-    "bin": {
-        "create-node-ts-app": "bin/create-app.ts"
-    },
     "scripts": {
         "prettier": "prettier --write \"**/*.ts\" \"**/*.js\" \"**/*.json\" \"**/*.css\"",
-        "prettify": "pretty-quick --staged"
+        "prettify": "pretty-quick --staged",
+        "dev": "nodemon src/index.ts",
+        "start": "ts-node src/index.ts"
     },
     "husky": {
         "hooks": {
@@ -30,19 +24,11 @@
         }
     },
     "keywords": [
-        "cli",
-        "starter-kit",
         "node",
         "ts",
-        "typescript",
-        "boilerplate"
+        "typescript"
     ],
     "author": {
-        "name": "Umang Khandelwal"
-    },
-    "licenses": [
-        {
-            "type": "MIT"
-        }
-    ]
+        "name": "author_name"
+    }
 }
