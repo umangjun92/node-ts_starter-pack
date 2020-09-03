@@ -5,9 +5,14 @@
     "license": "MIT",
     "description": "CLI to bootstrap new typescript based node apps.",
     "dependencies": {
+        "arg": "^4.1.3",
         "chalk": "^4.1.0",
         "esm": "^3.2.25",
-        "ncp": "^2.0.0"
+        "execa": "^4.0.3",
+        "inquirer": "^7.3.3",
+        "listr": "^0.14.3",
+        "ncp": "^2.0.0",
+        "pkg-install": "^1.0.0"
     },
     "devDependencies": {
         "nodemon": "^2.0.4",
@@ -15,7 +20,7 @@
         "prettify": "^0.1.7"
     },
     "bin": {
-        "create-node-ts-app": "bin/create-app.ts"
+        "create-node-ts-app": "bin/create-app.js"
     },
     "scripts": {
         "prettier": "prettier --write \"**/*.ts\" \"**/*.js\" \"**/*.json\" \"**/*.css\"",
